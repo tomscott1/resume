@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Scott</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        .pallete {
+            --color-primary: #3664BE;
+            --color-secondary: #80A0DE;
+            --color-tertiary: #567ECC;
+            --color-quaternary: #144AB3;
+            --color-quinary: #0C3587;
+            --color-accent: #05B2DC;
+            --color-off-white: #FBFBF2;
+        }
+        h1, h2, h3 {
+            text-transform: uppercase;
+            font-family: 'Archivo Black', sans-serif;
+            margin-bottom: 1rem;
+            color: #3664BE;
+        }
+        h1 { font-size: 3rem; }
+        h2 { font-size: 2rem; }
+        h3 { font-size: 1.5rem; }
+        /* Container */
+        .container {
+            width: 80%;
+            margin: auto;
+            max-width: 1200px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* Hero Section */
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-radius: 8px;
+        }
+        .hero h1 {
+            font-size: 4rem;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            margin: 20px 0;
+        }
+        .cta {
+            background-color: #05B2DC;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .cta:hover {
+            background-color: #3664BE;
+        }
+        /* About Section */
+        .about {
+            text-align: center;
+            padding: 40px 0;
+        }
+        .about p {
+            margin-top: 10px;
+        }
+        /* Grid Section for Portfolio and Skills */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card h3 {
+            margin-bottom: 10px;
+        }
+        /* Testimonials Section */
+        .testimonials {
+            text-align: center;
+            padding: 40px 0;
+        }
+        .testimonials .grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .testimonials .card {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #ff6f61;
+        }
+        /* Education Section */
+        .education {
+            padding: 40px 0;
+        }
+        /* Contact Section */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .contact-form input, .contact-form textarea, .contact-form button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #ff6f61;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #e65b50;
+        }
+        /* Palette */
+        .palette {
+            background-color: #05B2DC;
+            color: white;
+        }
+        .palette h1, .palette h2, .palette h3 {
+            color: black;
+        }
+        .palette .cta {
+            background-color: black;
+        }
+        .palette .cta:hover {
+            background-color: #333;
+        }
+        .palette .card {
+            background-color: white;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .palette .testimonials .card {
+            background-color: #f9f9f9;
+            border-left: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Tom Scott</h1>
+        <p>Full Stack Web Developer</p>
+        <a href="resume.pdf" class="cta pallete">Download My Resume</a>
+    </header>
+    <div class="container">
+        <!-- About Section -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>A brief description of who you are, your core values, and what makes you stand out professionally.</p>
+        </section>
+        <!-- Portfolio Section -->
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Project Name 1</h3>
+                    <p>A brief description of the project and the key skills or technologies involved.</p>
+                </div>
+                <div class="card">
+                    <h3>Project Name 2</h3>
+                    <p>Another project summary that captures your relevant skills and creativity.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Skill Name 1</h3>
+                    <p>Explanation of skill or technology expertise.</p>
+                </div>
+                <div class="card">
+                    <h3>Skill Name 2</h3>
+                    <p>Explanation of another key skill you possess.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What People Are Saying</h2>
+            <div class="grid">
+                <div class="card">
+                    <p>"A highly skilled developer who delivers top-quality work!"</p>
+                    <small>- John Doe, Manager</small>
+                </div>
+                <div class="card">
+                    <p>"Always goes above and beyond expectations."</p>
+                    <small>- Jane Smith, Client</small>
+                </div>
+            </div>
+        </section>
+        <!-- Education Section -->
+        <section class="education">
+            <h2>Education & Certifications</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Bachelor of Computer Science</h3>
+                    <small>University of XYZ, 2020</small>
+                    <p>Graduated with honors. Specialized in software engineering.</p>
+                </div>
+                <div class a="card">
+                    <h3>Certified Public Accountant (CPA)</h3>
+                    <small>Accounting Board, 2018</small>
+                    <p>Licensed CPA with expertise in financial auditing.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0; /* Very light grey background */
+}
+
+.navbar {
+    height: 50px;
+    background-color: #3664BE;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.site-title {
+    color: white;
+    font-size: 1.2em;
+}
+
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.avatar-container {
+    margin-right: 20px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #3664BE;
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+    line-height: 1;
+}
+
+.hero-text p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}

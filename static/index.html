@@ -3,75 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tom Scott - Resume</title>
+    <title>Tom Scott Resume</title>
     <link rel="icon" href="document-validation-stroke-rounded.svg" type="image/svg+xml" style="color: lightblue;">
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; }
-        header, section { padding: 20px; }
-        header { background: #0077cc; color: white; }
-        header h1 { margin: 0; }
-        .container { width: 80%; margin: auto; overflow: hidden; }
-        .section-title { color: #0077cc; }
-        footer { background: #333; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Tom Scott</h1>
-            <p>Full Stack Web Developer</p>
+        <div class="navbar">
+            <div class="hamburger-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="site-title">tmsctt.com</div>
         </div>
     </header>
-
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p>
-                I am an experienced Full Stack Developer with a robust background in web development and a strong focus on automation and process improvement. After a career break of three years, I capitalised on the emergence of new AI technologies to enhance my skills, preparing myself to integrate these cutting-edge tools into effective business solutions. My expertise lies in seamlessly bridging the gap between technical solutions and business needs, continually driving efficiency and innovation.
-            </p>
-        </div>
-    </section>
-
-    <section id="experience">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <p>
-                <strong>Full Stack Web Developer</strong> - <em>PwC</em> (Nov 2016 - Aug 2021)<br>
-                As a Full Stack Developer, I was a part of the design and implementation of web solutions targeting automation, process improvement, and analytics, working closely with Business Analysts and stakeholders to ensure compliance with business needs and legislation. My role covered the entire development cycle, from creating dynamic user interfaces with technologies like HTML, CSS/SCSS, and JavaScript frameworks, to backend development using Node.js and Python, and managing CI/CD pipelines with AWS and Docker for enhanced deployment efficiency. My expertise extends to robust database management using PostgreSQL, MongoDB, and other SQL databases.
-            </p>
-            <p>
-                <strong>Data Analyst</strong> - <em>PwC</em> (Sep 2015 - Nov 2016)<br>
-                As a Data Analyst in the Transaction Services team, I specialised in managing, cleaning, and processing extensive datasets from financial and production sectors, refining data from summarised to transactional levels. My role involved not only reformatting and presenting the data but also conducting detailed analyses to identify trends and underlying economic drivers. Proficient in Alteryx, Tableau, Excel, Python, and various SQL databases, I significantly improved data handling efficiencies and reporting accuracy.
-During my tenure, I particularly honed my Python skills, focusing on data transformation using the pandas library and enhancing database functionality. I developed expertise in creating, optimizing, and querying SQL databases, which enabled faster data retrieval and streamlined analysis processes, significantly contributing to informed decision-making.
-            </p>
-            <!-- Repeat the block above for each job experience -->
-        </div>
-    </section>
-
-    <section id="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <p>
-                <strong>Chartered Accountant</strong> - <em>Institute of Chartered Accountants Australia</em> (2015)<br>
-            </p>
-            <p>
-                <strong>Bachelor of Accounting</strong> - <em>University of South Australia</em> (2012)<br>
-            </p>
-            <!-- Repeat for each educational qualification -->
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Information</h2>
-            <p>Email: tomscott85@gmail.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/tom-scott-68498774/">Tom Scott</a></p>
-        </div>
-        </div>
-    </section>
-
-    <footer style="height: 20px; opacity: 0.5; display: flex; justify-content: center; align-items: center;">
-        <p>© 2024 - Tom Scott</p>
-    </footer>
+    <main>
+        <section class="hero-banner">
+            <div class="avatar-container">
+                <img src="avatar.jpg" alt="Avatar" class="avatar">
+            </div>
+            <div class="hero-text">
+                <h1>Tom<br>Scott</h1>
+                <p>Web Developer</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
