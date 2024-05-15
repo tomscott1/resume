@@ -7,6 +7,7 @@
     <link rel="icon" href="document-validation-stroke-rounded.svg" type="image/svg+xml" style="color: lightblue;">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <header>
@@ -20,15 +21,39 @@
         </div>
     </header>
     <main>
+        <script src="script.js"></script>
         <section class="hero-banner">
-            <div class="avatar-container">
-                <img src="avatar.jpg" alt="Avatar" class="avatar">
+            <div class="hero-content">
+                <div class="avatar-container">
+                    <img src="avatar.jpg" alt="Avatar" class="avatar">
+                </div>
+                <div class="hero-text">
+                    <h1>Tom<br>Scott</h1>
+                    <p>Web Developer</p>
+                </div>
             </div>
-            <div class="hero-text">
-                <h1>Tom<br>Scott</h1>
-                <p>Web Developer</p>
+            <div class="button-container">
+                <button onclick="showSection('profile')">Profile</button>
+                <button onclick="showSection('work-experience')">Work Experience</button>
+                <button onclick="showSection('skills')">Skills</button>
+                <button onclick="showSection('contact')">Contact</button>
             </div>
+            <section id="profile" class="content-section">
+                <div class="profile-text">
+                    I am an experienced Full Stack Developer with a robust background in web development, specializing in automation and process improvement. After a career break of almost three years, I have returned with renewed enthusiasm to continue my career as a web developer. My expertise lies in seamlessly bridging the gap between technical solutions and user needs, continually driving efficiency and innovation in web development projects. I am adept at quickly picking up new technologies and integrating into existing projects, consistently delivering high-quality results.
+                </div>
+            </section>
+            <section id="work-experience" class="content-section" style="display: none;">
+                <div>Work Experience content goes here...</div>
+            </section>
+            <section id="skills" class="content-section" style="display: none;">
+                <div>Skills content goes here...</div>
+            </section>
+            <section id="contact" class="content-section" style="display: none;">
+                <div>Contact content goes here...</div>
+            </section>
         </section>
     </main>
+    
 </body>
 </html>
