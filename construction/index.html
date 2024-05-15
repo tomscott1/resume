@@ -12,14 +12,17 @@
 <body>
     <header>
         <div class="navbar">
-            <div class="hamburger-icon">
+            <div class="hamburger-icon" onclick="toggleMenu()">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
             <div class="site-title">tmsctt.com</div>
         </div>
-    </header>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="resume.pdf" download="TomScott_Resume.pdf">Download Resume</a>
+        </div>
+    </header>    
     <main>
         <script src="script.js"></script>
         <section class="hero-banner">

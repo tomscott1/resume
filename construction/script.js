@@ -23,3 +23,23 @@ function showSection(sectionId) {
 document.addEventListener('DOMContentLoaded', () => {
     showSection('profile');
 });
+
+
+function toggleMenu() {
+    const menu = document.getElementById('dropdownMenu');
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+    }
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.hamburger-icon') && !event.target.matches('.hamburger-icon div')) {
+        const menu = document.getElementById('dropdownMenu');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        }
+    }
+}
