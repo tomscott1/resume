@@ -8,6 +8,15 @@ function showSection(sectionId) {
     // Show the selected section
     const selectedSection = document.getElementById(sectionId);
     selectedSection.style.display = 'block';
+
+    // Update button states
+    const buttons = document.querySelectorAll('.button-container button');
+    buttons.forEach(button => {
+        button.classList.remove('selected');
+    });
+
+    // Add 'selected' class to the clicked button
+    document.querySelector(`.button-container button[onclick="showSection('${sectionId}')"]`).classList.add('selected');
 }
 
 // Show the profile section by default
