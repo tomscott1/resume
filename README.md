@@ -1,0 +1,1 @@
+[Download Resume](static/resume.pdf)

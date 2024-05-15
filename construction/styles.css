@@ -11,6 +11,30 @@ body {
     align-items: center;
     padding: 0 20px;
     justify-content: space-between;
+    position: relative; /* Ensure positioning context for the dropdown */
+}
+
+.rh-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ccc;
 }
 
 .dropdown-menu {
@@ -166,10 +190,54 @@ body {
     font-size: 1em;
     line-height: 1.6;
 }
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.carousel-container {
+    flex: 1;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
 
 .job-entry {
-    margin-bottom: 20px;
+    min-width: 100%;
 }
+
+.carousel-button {
+    background-color: #f0f0f0;
+    border-radius:100%;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1em;
+}
+
+.carousel-button#prevBtn {
+    margin-right: 10px;
+}
+
+.carousel-button#nextBtn {
+    margin-left: 10px;
+}
+
+.carousel-button:focus {
+    outline: none;
+}
+
+
 
 .job-title {
     font-size: 1.2em;
@@ -193,6 +261,59 @@ body {
     font-size: 1em;
     line-height: 1.6;
 }
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills-column {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-column h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skills-column h3 i {
+    margin-right: 10px;
+}
+
+.skills-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-column li {
+    margin-bottom: 5px;
+}
+
+.content-section p {
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.content-section a {
+    color: #3664BE;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-section a:hover {
+    text-decoration: underline;
+}
+
 
 
 @media (max-width: 768px) {
