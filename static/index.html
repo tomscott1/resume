@@ -6,22 +6,31 @@
     <title>Tom Scott Resume</title>
     <link rel="icon" href="document-validation-stroke-rounded.svg" type="image/svg+xml" style="color: lightblue;">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body>
     <header>
         <div class="navbar">
-            <div class="hamburger-icon">
+            <div class="hamburger-icon" onclick="toggleMenu()">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <div class="site-title">tmsctt.com</div>
+            <div class="rh-group">
+                <div class="social-icons">
+                    <a href="https://github.com/tomscott1" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/tom-scott-68498774/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="site-title">tmsctt.com</div>
+            </div>
         </div>
-    </header>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="resume.pdf" download="TomScott_Resume.pdf">Download Resume</a>
+        </div>
+    </header>    
     <main>
-        <script src="script.js"></script>
+        
         <section class="hero-banner">
             <div class="hero-content">
                 <div class="avatar-container">
@@ -44,23 +53,74 @@
                 </div>
             </section>
             <section id="work-experience" class="content-section" style="display: none;">
-                <div class="job-entry">
-                    <div class="job-title">FULL STACK DEVELOPER</div>
-                    <div class="employer">PwC - Enterprise Digital</div>
-                    <div class="date-range"><strong>Nov 2016 - Aug 2021</strong></div>
-                    <div class="position-summary profile-text">
-                        As a Full Stack Developer, I played a key role in designing and implementing web solutions focused on automation, process improvement, and analytics. I collaborated closely with Business Analysts and stakeholders to ensure our solutions met business needs and complied with relevant legislation. My primary responsibilities spanned the entire development cycle: creating dynamic user interfaces using React, developing robust backends with Node.js, and implementing microservices with Python. I also managed CI/CD pipelines using AWS and Docker to enhance deployment efficiency. While my main stack included React, Node.js, and Python, I successfully adapted to various other technology stacks across different projects, showcasing my versatility and ability to meet diverse project requirements. 
+                <div class="carousel-wrapper">
+                    <button class="carousel-button" id="prevBtn">&#10094;</button>
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div class="job-entry">
+                                <div class="job-title">FULL STACK DEVELOPER</div>
+                                <div class="employer">PwC - Enterprise Digital</div>
+                                <div class="date-range"><strong>Nov 2016 - Aug 2021</strong></div>
+                                <div class="position-summary profile-text">
+                                    As a Full Stack Developer, I played a key role in designing and implementing web solutions focused on automation, process improvement, and analytics. I collaborated closely with Business Analysts and stakeholders to ensure our solutions met business needs and complied with relevant legislation. My primary responsibilities spanned the entire development cycle: creating dynamic user interfaces using React, developing robust backends with Node.js, and implementing microservices with Python. I also managed CI/CD pipelines using AWS and Docker to enhance deployment efficiency. While my main stack included React, Node.js, and Python, I successfully adapted to various other technology stacks across different projects, showcasing my versatility and ability to meet diverse project requirements. 
+                                </div>
+                            </div>
+                            <div class="job-entry">
+                                <div class="job-title">Data Analyst</div>
+                                <div class="employer">PwC - Transaction Services</div>
+                                <div class="date-range"><strong>Sep 2015 - Nov 2016</strong></div>
+                                <div class="position-summary profile-text">
+                                    As a Data Analyst in the Transaction Services team, I managed, cleaned, and processed extensive financial and production datasets, transforming data from summarised to transactional levels. I utilized Python, particularly the pandas library, to streamline data transformation and analysis. Additionally, I integrated and optimized various SQL databases, enhancing data retrieval and reporting accuracy. My proficiency in Alteryx, Tableau, Excel, and Python significantly improved data handling efficiencies and supported informed decision-making.
+                                </div>
+                            </div>
+                            <!-- Add more job entries as needed -->
+                        </div>
                     </div>
+                    <button class="carousel-button" id="nextBtn">&#10095;</button>
                 </div>
             </section>
             <section id="skills" class="content-section" style="display: none;">
-                <div>Skills content goes here...</div>
+                <div class="skills-container">
+                    <div class="skills-column">
+                        <h3><i class="fab fa-html5"></i> Frontend</h3>
+                        <ul>
+                            <li>React</li>
+                            <li>Angular</li>
+                            <li>Vue</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Tailwind CSS</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="skills-column">
+                        <h3><i class="fas fa-server"></i> Backend</h3>
+                        <ul>
+                            <li>Node</li>
+                            <li>Python</li>
+                            <li>Postgres</li>
+                            <li>Mongo</li>
+                        </ul>
+                    </div>
+                    <div class="skills-column">
+                        <h3><i class="fas fa-tools"></i> Other</h3>
+                        <ul>
+                            <li>REST</li>
+                            <li>GraphQL</li>
+                            <li>AWS</li>
+                            <li>Azure</li>
+                            <li>Docker</li>
+                            <li>DevOps</li>
+                            <li>Linux</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
             <section id="contact" class="content-section" style="display: none;">
-                <div>Contact content goes here...</div>
+                <p>If you want to get in touch, email me at <a href="mailto:tomscott85@gmail.com">tomscott85@gmail.com</a>.</p>
             </section>
         </section>
     </main>
-    
+    <script src="script.js"></script>
 </body>
 </html>
